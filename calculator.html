@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body style="background-color: cornflowerblue;">
+    <table class="class1" >
+        <tr>
+            <td><button onclick="clrdata()">C</button></td>
+            <td colspan="3" ><input type="text" id="txtinput" name="answer" readonly style="width: 320px; height: 50px;"></td>
+        </tr>
+        <tr>
+            <td><button onclick = "but('+')">+</button></td>
+            <td><button onclick = "but('1')">1</button></td>
+            <td><button onclick = "but('2')">2</button></td> 
+            <td><button onclick = "but('3')">3</button></td>        
+        </tr>
+        <tr>
+            <td><button onclick = "but('-')">-</button></td>
+            <td><button onclick = "but('4')">4</button></td>
+            <td><button onclick = "but('5')">5</button></td>
+            <td><button onclick = "but('6')">6</button></td>   
+        </tr>
+        <tr>
+            <td><button onclick = "but('*')">*</button></td>
+            <td><button onclick = "but('6')">6</button></td>
+            <td><button onclick = "but('7')">7</button></td>
+            <td><button onclick = "but('8')">8</button></td>   
+        </tr>
+        <tr>
+            <td><button onclick="but('/')">/</button></td>
+            <td><button onclick="but('.')">.</button></td>
+            <td><button onclick="but('0')">0</button></td>
+            <td><button onclick="caldata()">=</button></td>      
+        </tr>
+    </table>
+</body>
+<script>
+function but(v) {
+   var txtinput = document.getElementById('txtinput');
+    var oldvalue = txtinput.value;
+    var t= oldvalue.lenght;
+    var lastchar = oldvalue[t-1];
+    var oprsys=["+","-","*","/","."]; 
+    txtinput.value = oldvalue + v
+
+   // if (oprsys.include(v)) {
+    //    if (oprsys.include(lastchar)) {
+     //       var removelast = oldvalue.slice(0,-1);
+            consol.log(removelast);
+      //  }else{
+ //           ;        }
+ //   }
+   
+}
+function caldata() {
+  var txtinput = document.getElementById('txtinput');
+  var oldvalue = eval(txtinput.value);// eval used describe that this is is number or integer//
+    txtinput.value = oldvalue;
+
+}
+function clrdata(){
+    document.getElementById('txtinput').value ='';
+}
+
+</script>
+</html>

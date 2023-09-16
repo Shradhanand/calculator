@@ -1,0 +1,42 @@
+.class1 {
+    border: 2px solid  black;
+    background-color: rgb(196, 130, 143);
+    position: absolute;
+    left: 400px;
+    top: 100px;
+    width: 40%;
+    
+
+
+}
+ td,tr,table {
+    border: 2px solid black;
+}
+td{
+    height: 70px;
+    padding: 20px;
+}
+button{
+    border-radius: 50%;
+    height: 50px;
+    width: 70px;
+    background-color: rgb(183, 207, 158);
+    padding-left: 5px;
+    margin-left: 10px;
+    font-size:larger;
+   
+}
+body{
+    background-image: url(https://images.unsplash.com/photo-1483232539664-d89822fb5d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvdG8lMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww&w=1000&q=80);
+    background-size: auto;
+}
+input{
+    border-radius: 10%;
+    background-color:rgb(183, 207, 158) ;
+}
+#txtinput{
+    text-align: right;
+    font-size: large;
+    font-weight: 200;
+    
+}
